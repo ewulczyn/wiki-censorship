@@ -1,0 +1,59 @@
+1. Select set of articles with invalid keywords from http://www.global.asc.upenn.edu/app/uploads/2014/06/citation_filtered_1-1.pdf
+
+http://arxiv.org/pdf/1209.6398v1.pdf
+
+2. Create Span comparison:
+Select set of articles with
+where pageviews more than doubled
+article viewed more than 10 per day in Iran after the transition
+ranked by normalized wdc_view_proporrtion_delta
+
+3. test p-value for getting those ranks
+
+
+4. Find more examples of articles that have a ts like the ones above
+
+Pick some canonical set of ts and ask labeler to assess the degree of resemblance
+Is similar or dissimilar to any of the above?
+Slider starts at 0. move  from 1 to -1.
+
+5. 2 types of examples:
+
+50% random sample
+50% examples from list of top changing articles
+Labeler does not know what is what
+Do not show the titles
+
+
+6.
+Train NN on:
+
+6.1. [0-1] bounded raw/smoothed series
+6.2. proportions
+6.3. summary stats
+6.4. Architecture
+6.5. Make sure to weigh negative examples
+
+- - ----
+- -
+- -
+- -
+
+7. Report Accuracy and Spearman
+
+
+
+what fraction of candidates labeled similar
+
+
+
+8. Apply Model to all Iran Series
+8.1 Give an analysis of top k articles that where blocked
+
+9. Apply Model to all Series
+- publish top [0,1] normed series
+
+
+
+
+
